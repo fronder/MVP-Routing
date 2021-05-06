@@ -1,0 +1,20 @@
+xcassets:
+    inputs: MVP Template/Resources/
+    outputs:
+        templateName: swift5
+        output: Assets.swift
+#fonts:
+#    inputs: ../Resources/Fonts/
+#    outputs:
+#        templateName: swift5
+#        output: Fonts.swift
+ib:
+    inputs: MVP Template
+    outputs:
+        templateName: scenes-swift5
+        output: StoryboardScenes.swift
+#strings:
+#    inputs: ../Localization/en.lproj/Localizable.strings
+#    outputs:
+#        templateName: structured-swift5
+#        output: L10n.swift
