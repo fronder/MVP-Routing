@@ -13,7 +13,11 @@ protocol MainCoordinatorListener: CoordinatorListener {
 
 typealias MainCoordinatorRouter = NavigationRouter
 
-final class MainCoordinator: BaseCoordinator<MainCoordinatorRouter, MainCoordinatorListener> {
+final class MainCoordinator: BaseCoordinator<MainCoordinatorRouter, MainCoordinatorListener>, TableScreenPresenterListener {
+    func handle(_ presenter: TableScreenPresenter, event: TableScreenPresenter.Event) {
+        
+    }
+    
     
     private let factory: MainCoordinator.Factory
     
@@ -41,24 +45,34 @@ final class MainCoordinator: BaseCoordinator<MainCoordinatorRouter, MainCoordina
         router.replaceStack(with: scene)
     }
     
-    private func performTableScene() {
+    private func performTableCoordinator() {
+        let coordinator = factory.tableScreenCoordinator(router: router)
+        store(coordinator)
+        coordinator.start()
+    }
+    
+    private func performCollectionCoordinator() {
         
     }
     
-    private func performSomeCoordinator() {
+//    private func performSomeCoordinator() {
         /* Initiate new coordinator using current router or create new one, than store it and start it.
          * let coordinator = factory.someCoordinator(listner: self, router: router)
          * store(coordinator)
          * coordinator.start()
          */
-//        factory.mainCoordinator(router: <#T##MainCoordinatorRouter#>)
-    }
+//    }
 }
 
 // Implement other Presenters and Coordinators listeners
 extension MainCoordinator: MainPresenterListener {
     func handle(_ presenter: MainPresenter, event: MainPresenter.Event) {
-        
+        switch event {
+        case .onTableClick:
+            performTableCoordinator()
+        case .onCollectionClick:
+            performCollectionCoordinator()
+        }
     }
 }
 

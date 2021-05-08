@@ -78,8 +78,41 @@
             </objects>
             <point key="canvasLocation" x="111.59420289855073" y="88.392857142857139"/>
         </scene>
+        <!--Table Screen View Controller-->
+        <scene sceneID="nFf-tH-JHF">
+            <objects>
+                <viewController storyboardIdentifier="TableScreenViewController" id="Y1V-iA-XuK" customClass="TableScreenViewController" customModule="MVP_Template" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="etE-RS-kco" customClass="TableScreenView" customModule="MVP_Template" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rln-6Q-19l">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="mdY-uC-bhc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rln-6Q-19l" firstAttribute="top" secondItem="mdY-uC-bhc" secondAttribute="top" id="hmo-O3-dUg"/>
+                            <constraint firstItem="rln-6Q-19l" firstAttribute="leading" secondItem="mdY-uC-bhc" secondAttribute="leading" id="rda-LW-EOT"/>
+                            <constraint firstItem="mdY-uC-bhc" firstAttribute="trailing" secondItem="rln-6Q-19l" secondAttribute="trailing" id="whE-Md-U9g"/>
+                            <constraint firstItem="mdY-uC-bhc" firstAttribute="bottom" secondItem="rln-6Q-19l" secondAttribute="bottom" id="xwo-3m-eq7"/>
+                        </constraints>
+                        <connections>
+                            <outlet property="tableView" destination="rln-6Q-19l" id="Yfx-d6-eea"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xe9-w2-3EE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="852" y="88"/>
+        </scene>
     </scenes>
     <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

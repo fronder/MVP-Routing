@@ -41,6 +41,11 @@
 		9F6308AB264415D400A9E886 /* AppDelegateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6308AA264415D400A9E886 /* AppDelegateService.swift */; };
 		9F6308D726448F2900A9E886 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6308D526448F2900A9E886 /* MainCoordinator.swift */; };
 		9F6308D826448F2900A9E886 /* MainCoordinator+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6308D626448F2900A9E886 /* MainCoordinator+Factory.swift */; };
+		9F6308EE264612DC00A9E886 /* TableScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6308EB264612DC00A9E886 /* TableScreenPresenter.swift */; };
+		9F6308EF264612DC00A9E886 /* TableScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6308EC264612DC00A9E886 /* TableScreenViewController.swift */; };
+		9F6308F0264612DC00A9E886 /* TableScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6308ED264612DC00A9E886 /* TableScreenView.swift */; };
+		9F6308F726461BA700A9E886 /* TableScreenCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6308F526461BA700A9E886 /* TableScreenCoordinator.swift */; };
+		9F6308F826461BA700A9E886 /* TableScreenCoordinator+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6308F626461BA700A9E886 /* TableScreenCoordinator+Factory.swift */; };
 		F0EE91AAD0083656FBF00BB1 /* Pods_MVP_Template.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D636BACF7425FE7078E6E871 /* Pods_MVP_Template.framework */; };
 /* End PBXBuildFile section */
 
@@ -83,6 +88,11 @@
 		9F6308AA264415D400A9E886 /* AppDelegateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateService.swift; sourceTree = "<group>"; };
 		9F6308D526448F2900A9E886 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		9F6308D626448F2900A9E886 /* MainCoordinator+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainCoordinator+Factory.swift"; sourceTree = "<group>"; };
+		9F6308EB264612DC00A9E886 /* TableScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableScreenPresenter.swift; sourceTree = "<group>"; };
+		9F6308EC264612DC00A9E886 /* TableScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableScreenViewController.swift; sourceTree = "<group>"; };
+		9F6308ED264612DC00A9E886 /* TableScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableScreenView.swift; sourceTree = "<group>"; };
+		9F6308F526461BA700A9E886 /* TableScreenCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableScreenCoordinator.swift; sourceTree = "<group>"; };
+		9F6308F626461BA700A9E886 /* TableScreenCoordinator+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableScreenCoordinator+Factory.swift"; sourceTree = "<group>"; };
 		D636BACF7425FE7078E6E871 /* Pods_MVP_Template.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVP_Template.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -263,19 +273,32 @@
 			path = "System Files";
 			sourceTree = "<group>";
 		};
-		9F6308DF264584AB00A9E886 /* TableModule */ = {
+		9F6308DF264584AB00A9E886 /* TableScreenModule */ = {
 			isa = PBXGroup;
 			children = (
+				9F6308F326461B5400A9E886 /* TableScreenFlow */,
+				9F6308EB264612DC00A9E886 /* TableScreenPresenter.swift */,
+				9F6308EC264612DC00A9E886 /* TableScreenViewController.swift */,
+				9F6308ED264612DC00A9E886 /* TableScreenView.swift */,
 			);
-			path = TableModule;
+			path = TableScreenModule;
 			sourceTree = "<group>";
 		};
 		9F6308E0264584BC00A9E886 /* Module */ = {
 			isa = PBXGroup;
 			children = (
-				9F6308DF264584AB00A9E886 /* TableModule */,
+				9F6308DF264584AB00A9E886 /* TableScreenModule */,
 			);
 			path = Module;
+			sourceTree = "<group>";
+		};
+		9F6308F326461B5400A9E886 /* TableScreenFlow */ = {
+			isa = PBXGroup;
+			children = (
+				9F6308F526461BA700A9E886 /* TableScreenCoordinator.swift */,
+				9F6308F626461BA700A9E886 /* TableScreenCoordinator+Factory.swift */,
+			);
+			path = TableScreenFlow;
 			sourceTree = "<group>";
 		};
 		B35A5D179C3E98D4EFBE467B /* Pods */ = {
@@ -418,14 +441,17 @@
 				9F6308D726448F2900A9E886 /* MainCoordinator.swift in Sources */,
 				9F63081A2642849200A9E886 /* ConfirmationWrapper.swift in Sources */,
 				9F6308D826448F2900A9E886 /* MainCoordinator+Factory.swift in Sources */,
+				9F6308EF264612DC00A9E886 /* TableScreenViewController.swift in Sources */,
 				9F63081C2642849200A9E886 /* Builder.swift in Sources */,
 				9F63080C2642849200A9E886 /* NavigationRouter.swift in Sources */,
 				9F6307EC2642836100A9E886 /* MainView.swift in Sources */,
 				9F6308AB264415D400A9E886 /* AppDelegateService.swift in Sources */,
+				9F6308F0264612DC00A9E886 /* TableScreenView.swift in Sources */,
 				9F63081D2642849200A9E886 /* Buildable.swift in Sources */,
 				9F6308102642849200A9E886 /* PresenterView.swift in Sources */,
 				9F6308A1264408AA00A9E886 /* Assets.swift in Sources */,
 				9F6308172642849200A9E886 /* ReplacableRouter.swift in Sources */,
+				9F6308F826461BA700A9E886 /* TableScreenCoordinator+Factory.swift in Sources */,
 				9F6308182642849200A9E886 /* Coordinator.swift in Sources */,
 				9F6307D12642825700A9E886 /* AppDelegate.swift in Sources */,
 				9F63080F2642849200A9E886 /* BaseCoordinator.swift in Sources */,
@@ -435,12 +461,14 @@
 				9F6308162642849200A9E886 /* Router.swift in Sources */,
 				9F6308112642849200A9E886 /* Scene.swift in Sources */,
 				9F63080D2642849200A9E886 /* BaseViewController.swift in Sources */,
+				9F6308EE264612DC00A9E886 /* TableScreenPresenter.swift in Sources */,
 				9F6308A526440A2100A9E886 /* StoryboardScenes.swift in Sources */,
 				9F6308122642849200A9E886 /* Presentable.swift in Sources */,
 				9F6307EA2642836100A9E886 /* MainPresenter.swift in Sources */,
 				9F6307EB2642836100A9E886 /* MainViewController.swift in Sources */,
 				9F6308142642849200A9E886 /* NavigableRouter.swift in Sources */,
 				9F6308192642849200A9E886 /* Listener.swift in Sources */,
+				9F6308F726461BA700A9E886 /* TableScreenCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -17,11 +17,6 @@ extension MainCoordinator {
 
 // MARK: - Scenes
 extension MainCoordinator.Factory {
-    /* Example of SomeScene
-     * func someScene(listener: SomePresenterListener) -> Scene {
-     *   return Builder.Scene<SomeViewController>.make(with: .init(listener: listener))
-     * }
-     */
     func mainScene(listener: MainPresenterListener) -> Scene {
         return Builder.Scene<MainViewController>.make(with: .init(listener: listener))
     }
@@ -29,14 +24,11 @@ extension MainCoordinator.Factory {
 
 // MARK: - Coordinators
 extension MainCoordinator.Factory {
-    /* Example of SomeCoordinator
-     * func SomeCoordinator(listener: SomePresenterListener) -> Coordinator {
-     *   return Builder.Scene<SomeCoordinator>.make(with: .init(listener: listener))
-     * }
-     */
     func mainCoordinator(router: MainCoordinatorRouter) -> Coordinator {
         return Builder.Coordinator<MainCoordinator>.make(with: .init(router: router, listener: nil))
     }
     
-    
+    func tableScreenCoordinator(router: TableScreenCoordinatorRouter) -> Coordinator {
+        return Builder.Coordinator<TableScreenCoordinator>.make(with: .init(router: router, listener: nil))
+    }
 }
