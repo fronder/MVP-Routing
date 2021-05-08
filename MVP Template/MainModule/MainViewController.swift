@@ -9,6 +9,19 @@ import UIKit
 
 class MainViewController: BaseViewController<MainView, MainPresenter> {
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        
+    }
+    
+    @IBAction func showTableDidClick(_ sender: Any) {
+        presenter.listener?.handle(.init(view: self), event: .onTableClick)
+    }
+    
+    @IBAction func onCollectionDidClick(_ sender: Any) {
+        presenter.listener?.handle(.init(view: self), event: .onCollectionClick)
+    }
 }
 
 extension MainViewController: MainPresenterView {

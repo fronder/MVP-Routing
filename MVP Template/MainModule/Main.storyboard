@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1t2-l7-yzn">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="rpV-mr-Pav">
+            <objects>
+                <viewController storyboardIdentifier="MainViewController" id="1t2-l7-yzn" customClass="MainViewController" customModule="MVP_Template" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dHv-Ld-GZd" userLabel="Main View" customClass="MainView" customModule="MVP_Template" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="dtB-Ad-lL0">
+                                <rect key="frame" x="107" y="359" width="200" height="98"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ozs-Fb-yYN">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="39"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                                        <state key="normal" title="Show Table">
+                                            <color key="titleColor" systemColor="systemBlueColor"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="showTableDidClick:" destination="1t2-l7-yzn" eventType="touchUpInside" id="lxG-Qn-gu5"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NXi-cR-C5s">
+                                        <rect key="frame" x="0.0" y="59" width="200" height="39"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                                        <state key="normal" title="Show Collection">
+                                            <color key="titleColor" systemColor="systemBlueColor"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="onCollectionDidClick:" destination="1t2-l7-yzn" eventType="touchUpInside" id="Jke-rT-3mc"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Tdq-Ub-c18"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="lO1-Lq-3c2"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dtB-Ad-lL0" firstAttribute="centerY" secondItem="dHv-Ld-GZd" secondAttribute="centerY" constant="-40" id="YWG-D0-4bv"/>
+                            <constraint firstItem="dtB-Ad-lL0" firstAttribute="centerX" secondItem="dHv-Ld-GZd" secondAttribute="centerX" id="jEq-VK-EDG"/>
+                        </constraints>
+                        <connections>
+                            <outlet property="collectionButton" destination="NXi-cR-C5s" id="7lz-ed-pnw"/>
+                            <outlet property="tableButton" destination="ozs-Fb-yYN" id="v6Y-3Z-SWB"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J7B-uH-bVm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="111.59420289855073" y="88.392857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

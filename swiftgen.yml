@@ -1,5 +1,5 @@
 xcassets:
-    inputs: MVP Template/Resources/
+    inputs: Resources/
     outputs:
         templateName: swift5
         output: Assets.swift

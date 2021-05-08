@@ -22,6 +22,7 @@ final class MainPresenter: BasePresenter<MainPresenterView, MainPresenterListene
 
 extension MainPresenter {
     enum Event {
-        //Add Presenter events
+        case onTableClick
+        case onCollectionClick
     }
 }

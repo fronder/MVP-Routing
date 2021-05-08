@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		9F6307D12642825700A9E886 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6307D02642825700A9E886 /* AppDelegate.swift */; };
 		9F6307D32642825700A9E886 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6307D22642825700A9E886 /* SceneDelegate.swift */; };
-		9F6307D52642825700A9E886 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6307D42642825700A9E886 /* ViewController.swift */; };
 		9F6307DA2642825B00A9E886 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F6307D92642825B00A9E886 /* Assets.xcassets */; };
 		9F6307DD2642825B00A9E886 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F6307DB2642825B00A9E886 /* LaunchScreen.storyboard */; };
 		9F6307E92642836100A9E886 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F6307E52642836100A9E886 /* Main.storyboard */; };
@@ -39,6 +38,9 @@
 		9F6308922644011400A9E886 /* GenerateResource.sh in Resources */ = {isa = PBXBuildFile; fileRef = 9F6308912644011400A9E886 /* GenerateResource.sh */; };
 		9F6308A1264408AA00A9E886 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6308A0264408AA00A9E886 /* Assets.swift */; };
 		9F6308A526440A2100A9E886 /* StoryboardScenes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6308A426440A2100A9E886 /* StoryboardScenes.swift */; };
+		9F6308AB264415D400A9E886 /* AppDelegateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6308AA264415D400A9E886 /* AppDelegateService.swift */; };
+		9F6308D726448F2900A9E886 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6308D526448F2900A9E886 /* MainCoordinator.swift */; };
+		9F6308D826448F2900A9E886 /* MainCoordinator+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6308D626448F2900A9E886 /* MainCoordinator+Factory.swift */; };
 		F0EE91AAD0083656FBF00BB1 /* Pods_MVP_Template.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D636BACF7425FE7078E6E871 /* Pods_MVP_Template.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,7 +50,6 @@
 		9F6307CD2642825700A9E886 /* MVP Template.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVP Template.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F6307D02642825700A9E886 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F6307D22642825700A9E886 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9F6307D42642825700A9E886 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9F6307D92642825B00A9E886 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F6307DC2642825B00A9E886 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F6307DE2642825B00A9E886 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -79,6 +80,9 @@
 		9F6308912644011400A9E886 /* GenerateResource.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = GenerateResource.sh; sourceTree = "<group>"; };
 		9F6308A0264408AA00A9E886 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = SOURCE_ROOT; };
 		9F6308A426440A2100A9E886 /* StoryboardScenes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardScenes.swift; sourceTree = SOURCE_ROOT; };
+		9F6308AA264415D400A9E886 /* AppDelegateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateService.swift; sourceTree = "<group>"; };
+		9F6308D526448F2900A9E886 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		9F6308D626448F2900A9E886 /* MainCoordinator+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainCoordinator+Factory.swift"; sourceTree = "<group>"; };
 		D636BACF7425FE7078E6E871 /* Pods_MVP_Template.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVP_Template.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -102,6 +106,7 @@
 				9F6307CE2642825700A9E886 /* Products */,
 				B35A5D179C3E98D4EFBE467B /* Pods */,
 				D3262835FF90CBF31AFA27D8 /* Frameworks */,
+				9F6308232642902B00A9E886 /* Resources */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,27 +121,25 @@
 		9F6307CF2642825700A9E886 /* MVP Template */ = {
 			isa = PBXGroup;
 			children = (
-				9F6308232642902B00A9E886 /* Resources */,
+				9F6307F12642840A00A9E886 /* MainModule */,
+				9F6308E0264584BC00A9E886 /* Module */,
+				9F6308A82644159F00A9E886 /* Services */,
 				9F6307F32642849100A9E886 /* Source Code */,
-				9F6307F12642840A00A9E886 /* Main */,
-				9F6307D02642825700A9E886 /* AppDelegate.swift */,
-				9F6307D22642825700A9E886 /* SceneDelegate.swift */,
-				9F6307D42642825700A9E886 /* ViewController.swift */,
-				9F6307DB2642825B00A9E886 /* LaunchScreen.storyboard */,
-				9F6307DE2642825B00A9E886 /* Info.plist */,
+				9F6308C3264430ED00A9E886 /* System Files */,
 			);
 			path = "MVP Template";
 			sourceTree = "<group>";
 		};
-		9F6307F12642840A00A9E886 /* Main */ = {
+		9F6307F12642840A00A9E886 /* MainModule */ = {
 			isa = PBXGroup;
 			children = (
+				9F6308AE2644164400A9E886 /* MainFlow */,
 				9F6307E52642836100A9E886 /* Main.storyboard */,
 				9F6307E62642836100A9E886 /* MainPresenter.swift */,
 				9F6307E72642836100A9E886 /* MainViewController.swift */,
 				9F6307E82642836100A9E886 /* MainView.swift */,
 			);
-			path = Main;
+			path = MainModule;
 			sourceTree = "<group>";
 		};
 		9F6307F32642849100A9E886 /* Source Code */ = {
@@ -230,6 +233,49 @@
 			children = (
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		9F6308A82644159F00A9E886 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9F6308AA264415D400A9E886 /* AppDelegateService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		9F6308AE2644164400A9E886 /* MainFlow */ = {
+			isa = PBXGroup;
+			children = (
+				9F6308D526448F2900A9E886 /* MainCoordinator.swift */,
+				9F6308D626448F2900A9E886 /* MainCoordinator+Factory.swift */,
+			);
+			path = MainFlow;
+			sourceTree = "<group>";
+		};
+		9F6308C3264430ED00A9E886 /* System Files */ = {
+			isa = PBXGroup;
+			children = (
+				9F6307D02642825700A9E886 /* AppDelegate.swift */,
+				9F6307D22642825700A9E886 /* SceneDelegate.swift */,
+				9F6307DB2642825B00A9E886 /* LaunchScreen.storyboard */,
+				9F6307DE2642825B00A9E886 /* Info.plist */,
+			);
+			path = "System Files";
+			sourceTree = "<group>";
+		};
+		9F6308DF264584AB00A9E886 /* TableModule */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TableModule;
+			sourceTree = "<group>";
+		};
+		9F6308E0264584BC00A9E886 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				9F6308DF264584AB00A9E886 /* TableModule */,
+			);
+			path = Module;
 			sourceTree = "<group>";
 		};
 		B35A5D179C3E98D4EFBE467B /* Pods */ = {
@@ -368,12 +414,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F6307D52642825700A9E886 /* ViewController.swift in Sources */,
 				9F63080E2642849200A9E886 /* BasePresenter.swift in Sources */,
+				9F6308D726448F2900A9E886 /* MainCoordinator.swift in Sources */,
 				9F63081A2642849200A9E886 /* ConfirmationWrapper.swift in Sources */,
+				9F6308D826448F2900A9E886 /* MainCoordinator+Factory.swift in Sources */,
 				9F63081C2642849200A9E886 /* Builder.swift in Sources */,
 				9F63080C2642849200A9E886 /* NavigationRouter.swift in Sources */,
 				9F6307EC2642836100A9E886 /* MainView.swift in Sources */,
+				9F6308AB264415D400A9E886 /* AppDelegateService.swift in Sources */,
 				9F63081D2642849200A9E886 /* Buildable.swift in Sources */,
 				9F6308102642849200A9E886 /* PresenterView.swift in Sources */,
 				9F6308A1264408AA00A9E886 /* Assets.swift in Sources */,
@@ -533,7 +581,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "MVP Template/Info.plist";
+				INFOPLIST_FILE = "MVP Template/System Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -553,7 +601,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "MVP Template/Info.plist";
+				INFOPLIST_FILE = "MVP Template/System Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
