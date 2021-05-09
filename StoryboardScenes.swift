@@ -22,6 +22,8 @@ internal enum StoryboardScene {
 
     internal static let initialScene = InitialSceneType<MVP_Template.MainViewController>(storyboard: Main.self)
 
+    internal static let collectionScreenViewController = SceneType<MVP_Template.CollectionScreenViewController>(storyboard: Main.self, identifier: "CollectionScreenViewController")
+
     internal static let mainViewController = SceneType<MVP_Template.MainViewController>(storyboard: Main.self, identifier: "MainViewController")
 
     internal static let tableScreenViewController = SceneType<MVP_Template.TableScreenViewController>(storyboard: Main.self, identifier: "TableScreenViewController")

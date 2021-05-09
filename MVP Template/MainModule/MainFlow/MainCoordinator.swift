@@ -37,10 +37,6 @@ final class MainCoordinator: BaseCoordinator<MainCoordinatorRouter, MainCoordina
     }
     
     private func performMainScene() {
-        /* Initiate new scene and show it using router's methods
-         * let scene = factory.someScene(listener: self)
-         * router.replaceStack(with: scene)
-         */
         let scene = factory.mainScene(listener: self)
         router.replaceStack(with: scene)
     }
@@ -52,7 +48,9 @@ final class MainCoordinator: BaseCoordinator<MainCoordinatorRouter, MainCoordina
     }
     
     private func performCollectionCoordinator() {
-        
+        let coordinator = factory.collectionScreenCoordinator(router: router)
+        store(coordinator)
+        coordinator.start()
     }
     
 //    private func performSomeCoordinator() {

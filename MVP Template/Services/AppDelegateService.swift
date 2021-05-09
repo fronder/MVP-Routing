@@ -33,7 +33,9 @@ class AppDelegateService {
             fatalError("Root viewController must be inherited from UINavigationController")
         }
         
-        mainCoordinator = MainCoordinator.init(MainCoordinatorRouter(rootNavigationController))
+        mainCoordinator = Builder.Coordinator<MainCoordinator>
+            .make(with:.init(router:.build(with:.init(navigationController: rootNavigationController)),
+                          listener: nil))
         mainCoordinator.start()
         window.makeKeyAndVisible()
     }

@@ -31,4 +31,8 @@ extension MainCoordinator.Factory {
     func tableScreenCoordinator(router: TableScreenCoordinatorRouter) -> Coordinator {
         return Builder.Coordinator<TableScreenCoordinator>.make(with: .init(router: router, listener: nil))
     }
+    
+    func collectionScreenCoordinator(router: CollectionScreenCoordinatorRouter) -> Coordinator {
+        return Builder.Coordinator<CollectionScreenCoordinator>.make(with: .init(router: router, listener: nil))
+    }
 }
