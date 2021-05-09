@@ -1,16 +1,26 @@
 PODS:
+  - Alamofire (5.4.3)
+  - Moya (14.0.0):
+    - Moya/Core (= 14.0.0)
+  - Moya/Core (14.0.0):
+    - Alamofire (~> 5.0)
   - SwiftGen (6.4.0)
 
 DEPENDENCIES:
+  - Moya (~> 14.0)
   - SwiftGen (~> 6.0)
 
 SPEC REPOS:
   trunk:
+    - Alamofire
+    - Moya
     - SwiftGen
 
 SPEC CHECKSUMS:
+  Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
+  Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
   SwiftGen: 67860cc7c3cfc2ed25b9b74cfd55495fc89f9108
 
-PODFILE CHECKSUM: f354aadc681c9095a560b5626b711f575e873c9a
+PODFILE CHECKSUM: b48cda8d59729a120e03a959a4fe75392d0f0372
 
 COCOAPODS: 1.10.1

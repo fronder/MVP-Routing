@@ -3,10 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F5D5A9C2647F47A0094505C /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5D5A9B2647F47A0094505C /* UserService.swift */; };
+		9F5D5AA02647F8560094505C /* BackendApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5D5A9F2647F8560094505C /* BackendApi.swift */; };
+		9F5D5AA42647FEB80094505C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5D5AA32647FEB80094505C /* User.swift */; };
+		9F5D5AA72647FEE20094505C /* Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5D5AA62647FEE20094505C /* Name.swift */; };
+		9F5D5AAA2647FEF60094505C /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5D5AA92647FEF60094505C /* Location.swift */; };
+		9F5D5AAF264802D70094505C /* BackendApi+User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5D5AAE264802D70094505C /* BackendApi+User.swift */; };
 		9F6307D12642825700A9E886 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6307D02642825700A9E886 /* AppDelegate.swift */; };
 		9F6307D32642825700A9E886 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6307D22642825700A9E886 /* SceneDelegate.swift */; };
 		9F6307DA2642825B00A9E886 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F6307D92642825B00A9E886 /* Assets.xcassets */; };
@@ -57,6 +63,12 @@
 /* Begin PBXFileReference section */
 		540DF6A3BE1884DF985EC02D /* Pods-MVP Template.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVP Template.debug.xcconfig"; path = "Target Support Files/Pods-MVP Template/Pods-MVP Template.debug.xcconfig"; sourceTree = "<group>"; };
 		97580F3A16A2A26F640E140F /* Pods-MVP Template.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVP Template.release.xcconfig"; path = "Target Support Files/Pods-MVP Template/Pods-MVP Template.release.xcconfig"; sourceTree = "<group>"; };
+		9F5D5A9B2647F47A0094505C /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		9F5D5A9F2647F8560094505C /* BackendApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackendApi.swift; sourceTree = "<group>"; };
+		9F5D5AA32647FEB80094505C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		9F5D5AA62647FEE20094505C /* Name.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Name.swift; sourceTree = "<group>"; };
+		9F5D5AA92647FEF60094505C /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		9F5D5AAE264802D70094505C /* BackendApi+User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BackendApi+User.swift"; sourceTree = "<group>"; };
 		9F6307CD2642825700A9E886 /* MVP Template.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVP Template.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F6307D02642825700A9E886 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F6307D22642825700A9E886 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -118,6 +130,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9F5D5A9A2647F4400094505C /* ApiService */ = {
+			isa = PBXGroup;
+			children = (
+				9F5D5A9B2647F47A0094505C /* UserService.swift */,
+				9F5D5AAC264802C20094505C /* BackendApi */,
+			);
+			path = ApiService;
+			sourceTree = "<group>";
+		};
+		9F5D5AA22647FE770094505C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9F5D5AA32647FEB80094505C /* User.swift */,
+				9F5D5AA62647FEE20094505C /* Name.swift */,
+				9F5D5AA92647FEF60094505C /* Location.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9F5D5AAC264802C20094505C /* BackendApi */ = {
+			isa = PBXGroup;
+			children = (
+				9F5D5A9F2647F8560094505C /* BackendApi.swift */,
+				9F5D5AAE264802D70094505C /* BackendApi+User.swift */,
+			);
+			path = BackendApi;
+			sourceTree = "<group>";
+		};
 		9F6307C42642825600A9E886 = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +181,7 @@
 		9F6307CF2642825700A9E886 /* MVP Template */ = {
 			isa = PBXGroup;
 			children = (
+				9F5D5AA22647FE770094505C /* Model */,
 				9F6307F12642840A00A9E886 /* MainModule */,
 				9F6308E0264584BC00A9E886 /* Module */,
 				9F6308A82644159F00A9E886 /* Services */,
@@ -259,6 +300,7 @@
 			isa = PBXGroup;
 			children = (
 				9F6308AA264415D400A9E886 /* AppDelegateService.swift */,
+				9F5D5A9A2647F4400094505C /* ApiService */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -361,6 +403,7 @@
 				9F6307C92642825700A9E886 /* Sources */,
 				9F6307CA2642825700A9E886 /* Frameworks */,
 				9F6307CB2642825700A9E886 /* Resources */,
+				5628F763A32D450B500D9A31 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -421,6 +464,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		5628F763A32D450B500D9A31 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MVP Template/Pods-MVP Template-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MVP Template/Pods-MVP Template-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MVP Template/Pods-MVP Template-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		9F63086A2643F46400A9E886 /* SwiftGen */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -472,6 +532,7 @@
 				9F6308D726448F2900A9E886 /* MainCoordinator.swift in Sources */,
 				9F63081A2642849200A9E886 /* ConfirmationWrapper.swift in Sources */,
 				9F6308D826448F2900A9E886 /* MainCoordinator+Factory.swift in Sources */,
+				9F5D5AA02647F8560094505C /* BackendApi.swift in Sources */,
 				9F6309002646B6FB00A9E886 /* CollectionScreenView.swift in Sources */,
 				9F6308EF264612DC00A9E886 /* TableScreenViewController.swift in Sources */,
 				9F63081C2642849200A9E886 /* Builder.swift in Sources */,
@@ -495,11 +556,16 @@
 				9F6308162642849200A9E886 /* Router.swift in Sources */,
 				9F6308112642849200A9E886 /* Scene.swift in Sources */,
 				9F63080D2642849200A9E886 /* BaseViewController.swift in Sources */,
+				9F5D5AA42647FEB80094505C /* User.swift in Sources */,
 				9F6308EE264612DC00A9E886 /* TableScreenPresenter.swift in Sources */,
+				9F5D5AAF264802D70094505C /* BackendApi+User.swift in Sources */,
 				9F6308FE2646B6FB00A9E886 /* CollectionScreenPresenter.swift in Sources */,
 				9F6309072646B72700A9E886 /* CollectionScreenCoordinator+Factory.swift in Sources */,
+				9F5D5AA72647FEE20094505C /* Name.swift in Sources */,
 				9F6308A526440A2100A9E886 /* StoryboardScenes.swift in Sources */,
+				9F5D5AAA2647FEF60094505C /* Location.swift in Sources */,
 				9F6308122642849200A9E886 /* Presentable.swift in Sources */,
+				9F5D5A9C2647F47A0094505C /* UserService.swift in Sources */,
 				9F6307EA2642836100A9E886 /* MainPresenter.swift in Sources */,
 				9F6307EB2642836100A9E886 /* MainViewController.swift in Sources */,
 				9F6308142642849200A9E886 /* NavigableRouter.swift in Sources */,

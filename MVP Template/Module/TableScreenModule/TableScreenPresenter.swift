@@ -17,7 +17,21 @@ protocol TableScreenPresenterListener: PresenterListener {
 
 final class TableScreenPresenter: BasePresenter<TableScreenPresenterView, TableScreenPresenterListener> {
     
-    //Add some methods for TableScreenPresenterView
+    private lazy var apiService: BackendAPI.UserApi = {
+        return BackendAPI.UserApi()
+    }()
+    
+    override func onViewLoad() {
+        super.onViewLoad()
+        
+        apiService.request { (users) in
+            print(users)
+        } onError: { (code, message) in
+            print(code)
+            print(message)
+        }
+
+    }
 }
 
 extension TableScreenPresenter {
