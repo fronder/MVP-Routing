@@ -282,7 +282,6 @@
 				9F5D5ABA264870560094505C /* View */,
 				9F5D5AB126486FA60094505C /* Protocols */,
 				9F5D5AA22647FE770094505C /* Model */,
-				9F6307F12642840A00A9E886 /* MainModule */,
 				9F6308E0264584BC00A9E886 /* Module */,
 				9F6308A82644159F00A9E886 /* Services */,
 				9F6307F32642849100A9E886 /* Source Code */,
@@ -441,6 +440,7 @@
 		9F6308E0264584BC00A9E886 /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				9F6307F12642840A00A9E886 /* MainModule */,
 				9F6308FA2646B6B000A9E886 /* CollectionScreenModule */,
 				9F6308DF264584AB00A9E886 /* TableScreenModule */,
 			);
