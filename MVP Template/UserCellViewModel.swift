@@ -20,6 +20,10 @@ class UserCellViewModel {
     var phone: String {
         user.phone
     }
+    var thumbnailUrl: URL? {
+        URL(string: user.picture.thumbnail)!
+    }
+    
     
     init(_ user: User) {
         self.user = user
