@@ -12,7 +12,14 @@ class TableScreenViewController: BaseViewController<TableScreenView, TableScreen
 }
 
 extension TableScreenViewController: TableScreenPresenterView {
+    func reloadData() {
+        (view as? TableScreenView)?.reloadData()
+    }
     
+    func setTableViewProvider(_ provider: TableViewProvider) {
+        (view as? TableScreenView)?.setTableViewProvider(provider)
+    }
+        
     func showHUD(animated: Bool) {
         view.showHUD(animated: true)
     }
@@ -24,6 +31,10 @@ extension TableScreenViewController: TableScreenPresenterView {
     func hideHUD(animated: Bool) {
         view.hideHUD(animated: true)
     }
+}
+
+extension TableScreenViewController {
+    
     
     
 }

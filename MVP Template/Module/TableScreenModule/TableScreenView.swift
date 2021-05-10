@@ -13,3 +13,16 @@ class TableScreenView: UIView {
     
     
 }
+
+extension TableScreenView: TableScreenViewInterface {
+    func reloadData() {
+        tableView.reloadData()
+    }
+    
+    func setTableViewProvider(_ provider: TableViewProvider) {
+        tableView.dataSource = provider
+        tableView.delegate = provider
+    }
+    
+    
+}

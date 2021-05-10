@@ -23,16 +23,32 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "305B6912-B6A9-485F-9D0B-2A463A288813"
+            uuid = "0DBFDD30-B36A-4A1D-99B1-66098154EC01"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MVP Template/Protocols/HUDDisplayable.swift"
+            filePath = "MVP Template/Module/TableScreenModule/TableScreenViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
-            landmarkName = "showHUD(backgroundColor:tintColor:animated:)"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "reloadData()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E31FC21D-8B1E-4B1E-908F-84C29F061D75"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MVP Template/Module/TableScreenModule/TableScreenViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "setTableViewProvider(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
