@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol TableScreenPresenterView: PresenterView {
+protocol TableScreenPresenterView: PresenterView, HUDDisplayable {
     //Add some methods for TableScreenPresenter
 }
 
@@ -20,18 +20,25 @@ final class TableScreenPresenter: BasePresenter<TableScreenPresenterView, TableS
     private lazy var apiService: BackendAPI.UserApi = {
         return BackendAPI.UserApi()
     }()
+    private var items: [UserCellViewModel] = []
+    
     
     override func onViewLoad() {
         super.onViewLoad()
         
-        apiService.request { (users) in
-            print(users)
-        } onError: { (code, message) in
-            print(code)
-            print(message)
+        view?.showHUD(animated: true)
+        
+        apiService.request { [weak view, unowned self] (users) in
+            view?.hideHUD(animated: true)
+            
+            self.items = users.map { UserCellViewModel($0) }
+            
+        } onError: { [weak view] (code, message) in
+            view?.hideHUD(animated: true)
         }
 
     }
+    
 }
 
 extension TableScreenPresenter {

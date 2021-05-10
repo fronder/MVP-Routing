@@ -13,6 +13,13 @@
 		9F5D5AA72647FEE20094505C /* Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5D5AA62647FEE20094505C /* Name.swift */; };
 		9F5D5AAA2647FEF60094505C /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5D5AA92647FEF60094505C /* Location.swift */; };
 		9F5D5AAF264802D70094505C /* BackendApi+User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5D5AAE264802D70094505C /* BackendApi+User.swift */; };
+		9F5D5AB7264870150094505C /* HUDDisplayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5D5AB6264870150094505C /* HUDDisplayable.swift */; };
+		9F5D5ABC264870650094505C /* HUDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5D5ABB264870650094505C /* HUDView.swift */; };
+		9F5D5AC226493DCA0094505C /* UserCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5D5AC126493DCA0094505C /* UserCellViewModel.swift */; };
+		9F5D5AC52649427A0094505C /* TableViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5D5AC42649427A0094505C /* TableViewProvider.swift */; };
+		9F5D5AC82649429B0094505C /* CollectionViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5D5AC72649429B0094505C /* CollectionViewProvider.swift */; };
+		9F5D5ACC26494A650094505C /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5D5ACB26494A650094505C /* UIView+Extension.swift */; };
+		9F5D5ACF26494A880094505C /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5D5ACE26494A880094505C /* ReusableView.swift */; };
 		9F6307D12642825700A9E886 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6307D02642825700A9E886 /* AppDelegate.swift */; };
 		9F6307D32642825700A9E886 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6307D22642825700A9E886 /* SceneDelegate.swift */; };
 		9F6307DA2642825B00A9E886 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F6307D92642825B00A9E886 /* Assets.xcassets */; };
@@ -69,6 +76,13 @@
 		9F5D5AA62647FEE20094505C /* Name.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Name.swift; sourceTree = "<group>"; };
 		9F5D5AA92647FEF60094505C /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		9F5D5AAE264802D70094505C /* BackendApi+User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BackendApi+User.swift"; sourceTree = "<group>"; };
+		9F5D5AB6264870150094505C /* HUDDisplayable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUDDisplayable.swift; sourceTree = "<group>"; };
+		9F5D5ABB264870650094505C /* HUDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUDView.swift; sourceTree = "<group>"; };
+		9F5D5AC126493DCA0094505C /* UserCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCellViewModel.swift; sourceTree = "<group>"; };
+		9F5D5AC42649427A0094505C /* TableViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewProvider.swift; sourceTree = "<group>"; };
+		9F5D5AC72649429B0094505C /* CollectionViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewProvider.swift; sourceTree = "<group>"; };
+		9F5D5ACB26494A650094505C /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		9F5D5ACE26494A880094505C /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
 		9F6307CD2642825700A9E886 /* MVP Template.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVP Template.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F6307D02642825700A9E886 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F6307D22642825700A9E886 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -158,6 +172,57 @@
 			path = BackendApi;
 			sourceTree = "<group>";
 		};
+		9F5D5AB126486FA60094505C /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				9F5D5AB6264870150094505C /* HUDDisplayable.swift */,
+				9F5D5AC42649427A0094505C /* TableViewProvider.swift */,
+				9F5D5AC72649429B0094505C /* CollectionViewProvider.swift */,
+				9F5D5ACE26494A880094505C /* ReusableView.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		9F5D5AB9264870460094505C /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				9F5D5ABB264870650094505C /* HUDView.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		9F5D5ABA264870560094505C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9F5D5AB9264870460094505C /* Custom */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9F5D5ABF26493D960094505C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9F5D5AC026493DB20094505C /* Cell */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		9F5D5AC026493DB20094505C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				9F5D5AC126493DCA0094505C /* UserCellViewModel.swift */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		9F5D5ACA26494A4C0094505C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9F5D5ACB26494A650094505C /* UIView+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		9F6307C42642825600A9E886 = {
 			isa = PBXGroup;
 			children = (
@@ -181,6 +246,10 @@
 		9F6307CF2642825700A9E886 /* MVP Template */ = {
 			isa = PBXGroup;
 			children = (
+				9F5D5ACA26494A4C0094505C /* Extensions */,
+				9F5D5ABF26493D960094505C /* ViewModel */,
+				9F5D5ABA264870560094505C /* View */,
+				9F5D5AB126486FA60094505C /* Protocols */,
 				9F5D5AA22647FE770094505C /* Model */,
 				9F6307F12642840A00A9E886 /* MainModule */,
 				9F6308E0264584BC00A9E886 /* Module */,
@@ -539,17 +608,23 @@
 				9F63080C2642849200A9E886 /* NavigationRouter.swift in Sources */,
 				9F6307EC2642836100A9E886 /* MainView.swift in Sources */,
 				9F6308AB264415D400A9E886 /* AppDelegateService.swift in Sources */,
+				9F5D5ACF26494A880094505C /* ReusableView.swift in Sources */,
 				9F6308F0264612DC00A9E886 /* TableScreenView.swift in Sources */,
 				9F6308FF2646B6FB00A9E886 /* CollectionScreenViewController.swift in Sources */,
 				9F6309062646B72700A9E886 /* CollectionScreenCoordinator.swift in Sources */,
 				9F63081D2642849200A9E886 /* Buildable.swift in Sources */,
+				9F5D5ACC26494A650094505C /* UIView+Extension.swift in Sources */,
+				9F5D5AC52649427A0094505C /* TableViewProvider.swift in Sources */,
 				9F6308102642849200A9E886 /* PresenterView.swift in Sources */,
 				9F6308A1264408AA00A9E886 /* Assets.swift in Sources */,
 				9F6308172642849200A9E886 /* ReplacableRouter.swift in Sources */,
+				9F5D5ABC264870650094505C /* HUDView.swift in Sources */,
 				9F6308F826461BA700A9E886 /* TableScreenCoordinator+Factory.swift in Sources */,
 				9F6308182642849200A9E886 /* Coordinator.swift in Sources */,
 				9F6307D12642825700A9E886 /* AppDelegate.swift in Sources */,
 				9F63080F2642849200A9E886 /* BaseCoordinator.swift in Sources */,
+				9F5D5AC226493DCA0094505C /* UserCellViewModel.swift in Sources */,
+				9F5D5AC82649429B0094505C /* CollectionViewProvider.swift in Sources */,
 				9F6307D32642825700A9E886 /* SceneDelegate.swift in Sources */,
 				9F6308152642849200A9E886 /* PresentableRouter.swift in Sources */,
 				9F6308132642849200A9E886 /* Presenter.swift in Sources */,
@@ -566,6 +641,7 @@
 				9F5D5AAA2647FEF60094505C /* Location.swift in Sources */,
 				9F6308122642849200A9E886 /* Presentable.swift in Sources */,
 				9F5D5A9C2647F47A0094505C /* UserService.swift in Sources */,
+				9F5D5AB7264870150094505C /* HUDDisplayable.swift in Sources */,
 				9F6307EA2642836100A9E886 /* MainPresenter.swift in Sources */,
 				9F6307EB2642836100A9E886 /* MainViewController.swift in Sources */,
 				9F6308142642849200A9E886 /* NavigableRouter.swift in Sources */,

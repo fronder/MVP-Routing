@@ -7,26 +7,6 @@
 
 import Foundation
 
-//struct UserResults: Decodable {
-//    let result: User
-//    let info: Info
-//
-//    private enum CodingKeys: String, CodingKey {
-//        case result, info
-//    }
-//}
-
-//struct Info: Decodable {
-//    let seed: String
-//    let results: Int
-//    let page: Int
-//    let version: String
-//
-//    private enum CodingKeys: String, CodingKey {
-//        case seed, results, page, version
-//    }
-//}
-
 struct User: Decodable {
     let gender: String
     let name: Name

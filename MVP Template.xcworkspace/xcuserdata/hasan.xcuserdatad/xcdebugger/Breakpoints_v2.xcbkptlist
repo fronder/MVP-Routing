@@ -23,16 +23,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "4E65C9EB-648D-4652-AA65-5A23259BD0C1"
+            uuid = "305B6912-B6A9-485F-9D0B-2A463A288813"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MVP Template/Module/TableScreenModule/TableScreenPresenter.swift"
+            filePath = "MVP Template/Protocols/HUDDisplayable.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
-            landmarkName = "onViewLoad()"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "showHUD(backgroundColor:tintColor:animated:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
