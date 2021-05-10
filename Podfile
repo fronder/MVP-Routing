@@ -6,5 +6,6 @@ target 'MVP Template' do
 
 	pod 'SwiftGen', '~> 6.0'
   pod 'Moya', '~> 14.0'
+  pod 'Kingfisher', '~> 6.0'
   
 end
