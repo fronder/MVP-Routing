@@ -45,7 +45,6 @@ final class TableScreenPresenter: BasePresenter<TableScreenPresenterView, TableS
         } onError: { [weak view] (code, message) in
             view?.hideHUD(animated: true)
         }
-
     }
 }
 

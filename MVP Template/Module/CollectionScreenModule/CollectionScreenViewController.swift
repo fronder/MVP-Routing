@@ -12,6 +12,26 @@ class CollectionScreenViewController: BaseViewController<CollectionScreenView, C
 }
 
 extension CollectionScreenViewController: CollectionScreenPresenterView {
+    func showHUD(animated: Bool) {
+        view.showHUD(animated: true)
+    }
+    
+    func showHUD(backgroundColor: UIColor?, tintColor: UIColor?, animated: Bool) {
+        
+    }
+    
+    func hideHUD(animated: Bool) {
+        view.hideHUD(animated: true)
+    }
+    
+    func reloadData() {
+        (view as? CollectionScreenView)?.reloadData()
+    }
+    
+    func setTableViewProvider(_ provider: CollectionViewProvider) {
+        (view as? CollectionScreenView)?.setTableViewProvider(provider)
+    }
+    
     
 }
 
@@ -31,3 +51,5 @@ extension CollectionScreenViewController: BuildableScene {
         return viewController
     }
 }
+
+

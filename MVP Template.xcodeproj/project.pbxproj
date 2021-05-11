@@ -23,6 +23,9 @@
 		9F5D5AD326494FD10094505C /* TableScreenViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5D5AD226494FD10094505C /* TableScreenViewInterface.swift */; };
 		9F5D5AD9264952690094505C /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5D5AD8264952690094505C /* UserTableViewCell.swift */; };
 		9F5D5ADD264956FA0094505C /* TableScreenTableViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5D5ADC264956FA0094505C /* TableScreenTableViewProvider.swift */; };
+		9F5D5AE926496D490094505C /* CollectionScreenViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5D5AE826496D490094505C /* CollectionScreenViewInterface.swift */; };
+		9F5D5AEC26496F300094505C /* CollectionScreenTableViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5D5AEB26496F300094505C /* CollectionScreenTableViewProvider.swift */; };
+		9F5D5AF22649725B0094505C /* UserCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5D5AF12649725B0094505C /* UserCollectionViewCell.swift */; };
 		9F6307D12642825700A9E886 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6307D02642825700A9E886 /* AppDelegate.swift */; };
 		9F6307D32642825700A9E886 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6307D22642825700A9E886 /* SceneDelegate.swift */; };
 		9F6307DA2642825B00A9E886 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F6307D92642825B00A9E886 /* Assets.xcassets */; };
@@ -89,6 +92,9 @@
 		9F5D5AD226494FD10094505C /* TableScreenViewInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableScreenViewInterface.swift; sourceTree = "<group>"; };
 		9F5D5AD8264952690094505C /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 		9F5D5ADC264956FA0094505C /* TableScreenTableViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableScreenTableViewProvider.swift; sourceTree = "<group>"; };
+		9F5D5AE826496D490094505C /* CollectionScreenViewInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionScreenViewInterface.swift; sourceTree = "<group>"; };
+		9F5D5AEB26496F300094505C /* CollectionScreenTableViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionScreenTableViewProvider.swift; sourceTree = "<group>"; };
+		9F5D5AF12649725B0094505C /* UserCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCollectionViewCell.swift; sourceTree = "<group>"; };
 		9F6307CD2642825700A9E886 /* MVP Template.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVP Template.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F6307D02642825700A9E886 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F6307D22642825700A9E886 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -194,6 +200,7 @@
 			children = (
 				9F5D5ABB264870650094505C /* HUDView.swift */,
 				9F5D5ADC264956FA0094505C /* TableScreenTableViewProvider.swift */,
+				9F5D5AEB26496F300094505C /* CollectionScreenTableViewProvider.swift */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
@@ -252,6 +259,30 @@
 				9F5D5AD8264952690094505C /* UserTableViewCell.swift */,
 			);
 			path = TableViweCell;
+			sourceTree = "<group>";
+		};
+		9F5D5AE726496D210094505C /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				9F5D5AE826496D490094505C /* CollectionScreenViewInterface.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		9F5D5AEF264972310094505C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9F5D5AF0264972390094505C /* CollectionViewCell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9F5D5AF0264972390094505C /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				9F5D5AF12649725B0094505C /* UserCollectionViewCell.swift */,
+			);
+			path = CollectionViewCell;
 			sourceTree = "<group>";
 		};
 		9F6307C42642825600A9E886 = {
@@ -459,6 +490,8 @@
 		9F6308FA2646B6B000A9E886 /* CollectionScreenModule */ = {
 			isa = PBXGroup;
 			children = (
+				9F5D5AEF264972310094505C /* View */,
+				9F5D5AE726496D210094505C /* Protocols */,
 				9F6309032646B71100A9E886 /* CollectionScreenFlow */,
 				9F6308FB2646B6FA00A9E886 /* CollectionScreenPresenter.swift */,
 				9F6308FC2646B6FA00A9E886 /* CollectionScreenViewController.swift */,
@@ -635,6 +668,7 @@
 				9F6308D726448F2900A9E886 /* MainCoordinator.swift in Sources */,
 				9F63081A2642849200A9E886 /* ConfirmationWrapper.swift in Sources */,
 				9F5D5AD9264952690094505C /* UserTableViewCell.swift in Sources */,
+				9F5D5AF22649725B0094505C /* UserCollectionViewCell.swift in Sources */,
 				9F6308D826448F2900A9E886 /* MainCoordinator+Factory.swift in Sources */,
 				9F5D5AA02647F8560094505C /* BackendApi.swift in Sources */,
 				9F6309002646B6FB00A9E886 /* CollectionScreenView.swift in Sources */,
@@ -672,8 +706,10 @@
 				9F5D5AAF264802D70094505C /* BackendApi+User.swift in Sources */,
 				9F6308FE2646B6FB00A9E886 /* CollectionScreenPresenter.swift in Sources */,
 				9F6309072646B72700A9E886 /* CollectionScreenCoordinator+Factory.swift in Sources */,
+				9F5D5AEC26496F300094505C /* CollectionScreenTableViewProvider.swift in Sources */,
 				9F5D5AA72647FEE20094505C /* Name.swift in Sources */,
 				9F6308A526440A2100A9E886 /* StoryboardScenes.swift in Sources */,
+				9F5D5AE926496D490094505C /* CollectionScreenViewInterface.swift in Sources */,
 				9F5D5AAA2647FEF60094505C /* Location.swift in Sources */,
 				9F6308122642849200A9E886 /* Presentable.swift in Sources */,
 				9F5D5A9C2647F47A0094505C /* UserService.swift in Sources */,
