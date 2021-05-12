@@ -11,7 +11,7 @@ protocol TableScreenCoordinatorListener: CoordinatorListener {
     func handle(_ coordinator: TableScreenCoordinator, event: TableScreenCoordinator.Event)
 }
 
-typealias TableScreenCoordinatorRouter = NavigableRouter
+typealias TableScreenCoordinatorRouter = NavigationRouter
 
 final class TableScreenCoordinator: BaseCoordinator<TableScreenCoordinatorRouter, TableScreenCoordinatorListener> {
     private let factory: TableScreenCoordinator.Factory
@@ -28,23 +28,31 @@ final class TableScreenCoordinator: BaseCoordinator<TableScreenCoordinatorRouter
     private func performScene() {
         let scene = factory.tableScreenScene(listener: self)
         router.push(scene)
-         
     }
     
-    private func performSomeCoordinator() {
-        /* Initiate new coordinator using current router or create new one, than store it and start it.
-         * let coordinator = factory.someCoordinator(listner: self, router: router)
-         * store(coordinator)
-         * coordinator.start()
-         */
+    private func performDetailCoordinator() {
+         let coordinator = factory.userDetailCoordinator(router: router)
+         store(coordinator)
+         coordinator.start()
     }
 }
 
 
 extension TableScreenCoordinator: TableScreenPresenterListener {
     func handle(_ presenter: TableScreenPresenter, event: TableScreenPresenter.Event) {
+        switch event {
+        case .onCellClick:
+            performDetailCoordinator()
+        }
+    }
+}
+
+extension TableScreenCoordinator: UserDetailPresenterListener {
+    func handle(_ presenter: UserDetailPresenter, event: UserDetailPresenter.Event) {
         
     }
+    
+    
 }
 
 extension TableScreenCoordinator: TableScreenCoordinatorListener {

@@ -21,7 +21,10 @@ final class TableScreenPresenter: BasePresenter<TableScreenPresenterView, TableS
         return BackendAPI.UserApi()
     }()
     
-    let tableViewProvider = TableScreenTableViewProvider()
+    var items = [UserCellViewModel]()
+    lazy var tableViewProvider: TableScreenTableViewProvider = {
+        return TableScreenTableViewProvider()
+    }()
     
     
     override func onViewLoad() {
@@ -29,6 +32,7 @@ final class TableScreenPresenter: BasePresenter<TableScreenPresenterView, TableS
         
         view?.setTableViewProvider(tableViewProvider)
         
+        setTableViewProvider()
         fetchData()
     }
     
@@ -36,8 +40,8 @@ final class TableScreenPresenter: BasePresenter<TableScreenPresenterView, TableS
         view?.showHUD(animated: true)
         
         apiService.request { [weak view, unowned self] (users) in
-            
-            self.tableViewProvider.items = users.map { UserCellViewModel($0) }
+            self.items = users.map { UserCellViewModel($0) }
+            self.tableViewProvider.items = self.items
             
             view?.hideHUD(animated: true)
             view?.reloadData()
@@ -46,10 +50,16 @@ final class TableScreenPresenter: BasePresenter<TableScreenPresenterView, TableS
             view?.hideHUD(animated: true)
         }
     }
+    
+    private func setTableViewProvider() {
+        tableViewProvider.didSelectItem = { [unowned self] atIndex in
+            self.listener?.handle(self, event: .onCellClick)
+        }
+    }
 }
 
 extension TableScreenPresenter {
     enum Event {
-        //Add Presenter events
+        case onCellClick
     }
 }

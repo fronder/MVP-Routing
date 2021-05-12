@@ -33,6 +33,7 @@ class CollectionScreenTableViewProvider: NSObject, CollectionViewProvider {
         return cell
     }
     
+    
 }
 
 extension CollectionScreenTableViewProvider: UICollectionViewDelegateFlowLayout {

@@ -7,7 +7,7 @@
 
 import Foundation
 
-class UserCellViewModel {
+struct UserCellViewModel {
     
     private let user: User
     

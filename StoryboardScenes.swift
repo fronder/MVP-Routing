@@ -27,6 +27,8 @@ internal enum StoryboardScene {
     internal static let mainViewController = SceneType<MVP_Template.MainViewController>(storyboard: Main.self, identifier: "MainViewController")
 
     internal static let tableScreenViewController = SceneType<MVP_Template.TableScreenViewController>(storyboard: Main.self, identifier: "TableScreenViewController")
+
+    internal static let userDetailViewController = SceneType<MVP_Template.UserDetailViewController>(storyboard: Main.self, identifier: "UserDetailViewController")
   }
 }
 // swiftlint:enable explicit_type_interface identifier_name line_length type_body_length type_name

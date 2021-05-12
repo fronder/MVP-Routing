@@ -21,13 +21,16 @@ extension TableScreenCoordinator.Factory {
     func tableScreenScene(listener: TableScreenCoordinatorListener) -> Scene {
         return Builder.Scene<TableScreenViewController>.make(with: .init(listener: listener as! TableScreenPresenterListener))
     }
+    
+    
 }
 
 // MARK: - Coordinators
 extension TableScreenCoordinator.Factory {
-    /* Example of SomeCoordinator
-     * func SomeCoordinator(listener: SomePresenterListener) -> Coordinator {
-     *   return Builder.Scene<SomeCoordinator>.make(with: .init(listener: listener))
-     * }
-     */
+    
+    func userDetailCoordinator(router: UserDetailCoordinatorRouter) -> Coordinator {
+        return Builder.Coordinator<UserDetailCoordinator>.make(with: .init(router: router, listener: nil))
+        
+    }
+    
 }

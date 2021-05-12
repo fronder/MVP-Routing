@@ -12,6 +12,7 @@ class TableScreenTableViewProvider: NSObject, TableViewProvider {
     
     let configuration: Configuration
     var items = [UserCellViewModel]()
+    var didSelectItem: ((_ atIndex: Int) -> Void)?
     
     init(configuration: Configuration = Configuration()) {
         self.configuration = configuration
@@ -39,6 +40,10 @@ class TableScreenTableViewProvider: NSObject, TableViewProvider {
         return configuration.heightForRaw
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        didSelectItem?(indexPath.row)
+    }
 }
 
 extension TableScreenTableViewProvider {

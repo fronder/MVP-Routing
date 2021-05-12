@@ -26,6 +26,11 @@
 		9F5D5AE926496D490094505C /* CollectionScreenViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5D5AE826496D490094505C /* CollectionScreenViewInterface.swift */; };
 		9F5D5AEC26496F300094505C /* CollectionScreenTableViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5D5AEB26496F300094505C /* CollectionScreenTableViewProvider.swift */; };
 		9F5D5AF22649725B0094505C /* UserCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5D5AF12649725B0094505C /* UserCollectionViewCell.swift */; };
+		9F5D5B05264A9D150094505C /* UserDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5D5B02264A9D150094505C /* UserDetailPresenter.swift */; };
+		9F5D5B06264A9D150094505C /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5D5B03264A9D150094505C /* UserDetailViewController.swift */; };
+		9F5D5B07264A9D150094505C /* UserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5D5B04264A9D150094505C /* UserDetailView.swift */; };
+		9F5D5B0C264ABE0D0094505C /* UserDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5D5B0A264ABE0D0094505C /* UserDetailCoordinator.swift */; };
+		9F5D5B0D264ABE0D0094505C /* UserDetailCoordinator+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5D5B0B264ABE0D0094505C /* UserDetailCoordinator+Factory.swift */; };
 		9F6307D12642825700A9E886 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6307D02642825700A9E886 /* AppDelegate.swift */; };
 		9F6307D32642825700A9E886 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6307D22642825700A9E886 /* SceneDelegate.swift */; };
 		9F6307DA2642825B00A9E886 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F6307D92642825B00A9E886 /* Assets.xcassets */; };
@@ -95,6 +100,11 @@
 		9F5D5AE826496D490094505C /* CollectionScreenViewInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionScreenViewInterface.swift; sourceTree = "<group>"; };
 		9F5D5AEB26496F300094505C /* CollectionScreenTableViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionScreenTableViewProvider.swift; sourceTree = "<group>"; };
 		9F5D5AF12649725B0094505C /* UserCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCollectionViewCell.swift; sourceTree = "<group>"; };
+		9F5D5B02264A9D150094505C /* UserDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailPresenter.swift; sourceTree = "<group>"; };
+		9F5D5B03264A9D150094505C /* UserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
+		9F5D5B04264A9D150094505C /* UserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailView.swift; sourceTree = "<group>"; };
+		9F5D5B0A264ABE0D0094505C /* UserDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailCoordinator.swift; sourceTree = "<group>"; };
+		9F5D5B0B264ABE0D0094505C /* UserDetailCoordinator+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDetailCoordinator+Factory.swift"; sourceTree = "<group>"; };
 		9F6307CD2642825700A9E886 /* MVP Template.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVP Template.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F6307D02642825700A9E886 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F6307D22642825700A9E886 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -283,6 +293,26 @@
 				9F5D5AF12649725B0094505C /* UserCollectionViewCell.swift */,
 			);
 			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
+		9F5D5AFE264A98C40094505C /* UserDetailModule */ = {
+			isa = PBXGroup;
+			children = (
+				9F5D5B09264ABDF50094505C /* UserDetailFlow */,
+				9F5D5B02264A9D150094505C /* UserDetailPresenter.swift */,
+				9F5D5B03264A9D150094505C /* UserDetailViewController.swift */,
+				9F5D5B04264A9D150094505C /* UserDetailView.swift */,
+			);
+			path = UserDetailModule;
+			sourceTree = "<group>";
+		};
+		9F5D5B09264ABDF50094505C /* UserDetailFlow */ = {
+			isa = PBXGroup;
+			children = (
+				9F5D5B0A264ABE0D0094505C /* UserDetailCoordinator.swift */,
+				9F5D5B0B264ABE0D0094505C /* UserDetailCoordinator+Factory.swift */,
+			);
+			path = UserDetailFlow;
 			sourceTree = "<group>";
 		};
 		9F6307C42642825600A9E886 = {
@@ -474,6 +504,7 @@
 				9F6307F12642840A00A9E886 /* MainModule */,
 				9F6308FA2646B6B000A9E886 /* CollectionScreenModule */,
 				9F6308DF264584AB00A9E886 /* TableScreenModule */,
+				9F5D5AFE264A98C40094505C /* UserDetailModule */,
 			);
 			path = Module;
 			sourceTree = "<group>";
@@ -663,19 +694,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F5D5B0C264ABE0D0094505C /* UserDetailCoordinator.swift in Sources */,
 				9F5D5AD326494FD10094505C /* TableScreenViewInterface.swift in Sources */,
 				9F63080E2642849200A9E886 /* BasePresenter.swift in Sources */,
 				9F6308D726448F2900A9E886 /* MainCoordinator.swift in Sources */,
 				9F63081A2642849200A9E886 /* ConfirmationWrapper.swift in Sources */,
 				9F5D5AD9264952690094505C /* UserTableViewCell.swift in Sources */,
 				9F5D5AF22649725B0094505C /* UserCollectionViewCell.swift in Sources */,
+				9F5D5B07264A9D150094505C /* UserDetailView.swift in Sources */,
 				9F6308D826448F2900A9E886 /* MainCoordinator+Factory.swift in Sources */,
 				9F5D5AA02647F8560094505C /* BackendApi.swift in Sources */,
 				9F6309002646B6FB00A9E886 /* CollectionScreenView.swift in Sources */,
 				9F6308EF264612DC00A9E886 /* TableScreenViewController.swift in Sources */,
 				9F63081C2642849200A9E886 /* Builder.swift in Sources */,
 				9F5D5ADD264956FA0094505C /* TableScreenTableViewProvider.swift in Sources */,
+				9F5D5B05264A9D150094505C /* UserDetailPresenter.swift in Sources */,
 				9F63080C2642849200A9E886 /* NavigationRouter.swift in Sources */,
+				9F5D5B06264A9D150094505C /* UserDetailViewController.swift in Sources */,
 				9F6307EC2642836100A9E886 /* MainView.swift in Sources */,
 				9F6308AB264415D400A9E886 /* AppDelegateService.swift in Sources */,
 				9F5D5ACF26494A880094505C /* ReusableView.swift in Sources */,
@@ -704,6 +739,7 @@
 				9F5D5AA42647FEB80094505C /* User.swift in Sources */,
 				9F6308EE264612DC00A9E886 /* TableScreenPresenter.swift in Sources */,
 				9F5D5AAF264802D70094505C /* BackendApi+User.swift in Sources */,
+				9F5D5B0D264ABE0D0094505C /* UserDetailCoordinator+Factory.swift in Sources */,
 				9F6308FE2646B6FB00A9E886 /* CollectionScreenPresenter.swift in Sources */,
 				9F6309072646B72700A9E886 /* CollectionScreenCoordinator+Factory.swift in Sources */,
 				9F5D5AEC26496F300094505C /* CollectionScreenTableViewProvider.swift in Sources */,
