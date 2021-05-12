@@ -16,8 +16,7 @@ typealias MainCoordinatorRouter = NavigationRouter
 final class MainCoordinator: BaseCoordinator<MainCoordinatorRouter, MainCoordinatorListener>, TableScreenPresenterListener {
     func handle(_ presenter: TableScreenPresenter, event: TableScreenPresenter.Event) {
         
-    }
-    
+    }    
     
     private let factory: MainCoordinator.Factory
     

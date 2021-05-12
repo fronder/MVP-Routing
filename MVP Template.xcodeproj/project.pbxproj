@@ -31,6 +31,7 @@
 		9F5D5B07264A9D150094505C /* UserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5D5B04264A9D150094505C /* UserDetailView.swift */; };
 		9F5D5B0C264ABE0D0094505C /* UserDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5D5B0A264ABE0D0094505C /* UserDetailCoordinator.swift */; };
 		9F5D5B0D264ABE0D0094505C /* UserDetailCoordinator+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5D5B0B264ABE0D0094505C /* UserDetailCoordinator+Factory.swift */; };
+		9F5D5B11264C1B1C0094505C /* MVP Module.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F5D5B10264C1B1C0094505C /* MVP Module.png */; };
 		9F6307D12642825700A9E886 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6307D02642825700A9E886 /* AppDelegate.swift */; };
 		9F6307D32642825700A9E886 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6307D22642825700A9E886 /* SceneDelegate.swift */; };
 		9F6307DA2642825B00A9E886 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F6307D92642825B00A9E886 /* Assets.xcassets */; };
@@ -105,6 +106,7 @@
 		9F5D5B04264A9D150094505C /* UserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailView.swift; sourceTree = "<group>"; };
 		9F5D5B0A264ABE0D0094505C /* UserDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailCoordinator.swift; sourceTree = "<group>"; };
 		9F5D5B0B264ABE0D0094505C /* UserDetailCoordinator+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDetailCoordinator+Factory.swift"; sourceTree = "<group>"; };
+		9F5D5B10264C1B1C0094505C /* MVP Module.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MVP Module.png"; sourceTree = "<group>"; };
 		9F6307CD2642825700A9E886 /* MVP Template.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVP Template.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F6307D02642825700A9E886 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F6307D22642825700A9E886 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -439,6 +441,7 @@
 		9F6308232642902B00A9E886 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				9F5D5B10264C1B1C0094505C /* MVP Module.png */,
 				9F630827264290D800A9E886 /* Fonts */,
 				9F6307D92642825B00A9E886 /* Assets.xcassets */,
 				9F6308282642915000A9E886 /* Localizable.strings */,
@@ -619,6 +622,7 @@
 			files = (
 				9F6308292642915000A9E886 /* Localizable.strings in Resources */,
 				9F6308922644011400A9E886 /* GenerateResource.sh in Resources */,
+				9F5D5B11264C1B1C0094505C /* MVP Module.png in Resources */,
 				9F6307DD2642825B00A9E886 /* LaunchScreen.storyboard in Resources */,
 				9F63081B2642849200A9E886 /* Configuration.yml in Resources */,
 				9F6307DA2642825B00A9E886 /* Assets.xcassets in Resources */,
