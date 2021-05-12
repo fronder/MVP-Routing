@@ -32,9 +32,9 @@ final class UserDetailCoordinator: BaseCoordinator<UserDetailCoordinatorRouter, 
     }
     
     private func performUserDetailScene() {
-        let scene = factory.userDetailScene(listener: self) as UserDetailViewController
-        
-        router.push(scene)
+//        let scene = factory.userDetailScene(listener: self) as UserDetailViewController
+//
+//        router.push(scene)
     }
     
     private func performSomeCoordinator() {
