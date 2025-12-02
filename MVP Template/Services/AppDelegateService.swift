@@ -2,7 +2,7 @@
 //  AppDelegateService.swift
 //  MVP Template
 //
-//  Created by Hasan on 06/05/21.
+//  Created by Hasan Abdullaev on 06/05/21.
 //
 
 import Foundation

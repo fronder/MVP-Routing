@@ -2,7 +2,7 @@
 //  UserDetailCoordinator+Factory.swift
 //  MVP Template
 //
-//  Created by Hasan on 11/05/21.
+//  Created by Hasan Abdullaev on 11/05/21.
 //
 
 import Foundation

@@ -2,7 +2,7 @@
 //  UserCollectionViewCell.swift
 //  MVP Template
 //
-//  Created by Hasan on 10/05/21.
+//  Created by Hasan Abdullaev on 10/05/21.
 //
 
 import UIKit
